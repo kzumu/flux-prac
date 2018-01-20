@@ -31,5 +31,6 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-
+Pods/
+R.generated.swift
 # End of https://www.gitignore.io/api/xcode
