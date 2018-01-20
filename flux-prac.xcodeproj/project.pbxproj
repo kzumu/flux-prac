@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E4CD44F201229B40040D125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CD44E201229B40040D125 /* AppDelegate.swift */; };
-		6E4CD451201229B40040D125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CD450201229B40040D125 /* ViewController.swift */; };
-		6E4CD454201229B40040D125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4CD452201229B40040D125 /* Main.storyboard */; };
+		6E4CD451201229B40040D125 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CD450201229B40040D125 /* SignInViewController.swift */; };
+		6E4CD454201229B40040D125 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4CD452201229B40040D125 /* SignIn.storyboard */; };
 		6E4CD456201229B40040D125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4CD455201229B40040D125 /* Assets.xcassets */; };
 		6E4CD459201229B40040D125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4CD457201229B40040D125 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +17,8 @@
 /* Begin PBXFileReference section */
 		6E4CD44B201229B40040D125 /* flux-prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flux-prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4CD44E201229B40040D125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E4CD450201229B40040D125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6E4CD453201229B40040D125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E4CD450201229B40040D125 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		6E4CD453201229B40040D125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
 		6E4CD455201229B40040D125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4CD458201229B40040D125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4CD45A201229B40040D125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +54,22 @@
 		6E4CD44D201229B40040D125 /* flux-prac */ = {
 			isa = PBXGroup;
 			children = (
+				6E61CAB620131C1C00FFE887 /* ViewController */,
 				6E4CD44E201229B40040D125 /* AppDelegate.swift */,
-				6E4CD450201229B40040D125 /* ViewController.swift */,
-				6E4CD452201229B40040D125 /* Main.storyboard */,
+				6E4CD450201229B40040D125 /* SignInViewController.swift */,
+				6E4CD452201229B40040D125 /* SignIn.storyboard */,
 				6E4CD455201229B40040D125 /* Assets.xcassets */,
 				6E4CD457201229B40040D125 /* LaunchScreen.storyboard */,
 				6E4CD45A201229B40040D125 /* Info.plist */,
 			);
 			path = "flux-prac";
+			sourceTree = "<group>";
+		};
+		6E61CAB620131C1C00FFE887 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +133,7 @@
 			files = (
 				6E4CD459201229B40040D125 /* LaunchScreen.storyboard in Resources */,
 				6E4CD456201229B40040D125 /* Assets.xcassets in Resources */,
-				6E4CD454201229B40040D125 /* Main.storyboard in Resources */,
+				6E4CD454201229B40040D125 /* SignIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4CD451201229B40040D125 /* ViewController.swift in Sources */,
+				6E4CD451201229B40040D125 /* SignInViewController.swift in Sources */,
 				6E4CD44F201229B40040D125 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,12 +152,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6E4CD452201229B40040D125 /* Main.storyboard */ = {
+		6E4CD452201229B40040D125 /* SignIn.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6E4CD453201229B40040D125 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SignIn.storyboard;
 			sourceTree = "<group>";
 		};
 		6E4CD457201229B40040D125 /* LaunchScreen.storyboard */ = {
