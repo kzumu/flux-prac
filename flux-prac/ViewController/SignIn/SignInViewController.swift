@@ -65,8 +65,6 @@ fileprivate class Store {
 
 fileprivate class ActionCreator {
 	static func action(for event: View.Event, store: Store) -> Observable<Action> {
-		let currentState = store.currentState
-
 		switch event {
 		case .signInButtonTapped:
 			print("will request")
@@ -105,7 +103,15 @@ final class SignInViewController: UIViewController {
 		super.init(coder: aDecoder)
 	}
 
-	func bind() {
+	private func bind() {
+		store.states
+			.observeOn(MainScheduler.instance)
+			.subscribe(onNext: {
+				self.render(state: $0)
+			})
+			.disposed(by: disposeBag)
+
+
 		Observable.combineLatest(userIdField.rx.text, passwordField.rx.text)
 			.map {
 				guard let s1 = $0.0, let s2 = $0.1 else {
@@ -123,6 +129,20 @@ final class SignInViewController: UIViewController {
 			.disposed(by: disposeBag)
 
 		store.states.subscribe().disposed(by: disposeBag)
+	}
+
+	private func render(state: State) {
+		switch state.networkState {
+		case .nothing:
+			break
+		case .requesting:
+			let ac = UIAlertController(title: "ログイン機能が実装されていません", message: "実装してください", preferredStyle: .alert)
+			ac.addAction(UIAlertAction(title: "たぶん後でやる", style: .default, handler: nil))
+			present(ac, animated: true, completion: nil)
+			break
+		case .error(_):
+			break
+		}
 	}
 }
 

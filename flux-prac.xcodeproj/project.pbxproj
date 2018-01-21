@@ -14,6 +14,8 @@
 		6E4CD459201229B40040D125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4CD457201229B40040D125 /* LaunchScreen.storyboard */; };
 		6E61CACA2013B75000FFE887 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CAC92013B75000FFE887 /* GithubAPI.swift */; };
 		6E61CACC2013B86100FFE887 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CACB2013B86100FFE887 /* Secret.swift */; };
+		6E61CAEC2014436500FFE887 /* AllRepositoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CAEB2014436400FFE887 /* AllRepositoriesRequest.swift */; };
+		6E61CAEF201443D400FFE887 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CAEE201443D400FFE887 /* RepositoryEntity.swift */; };
 		8B5826129484B63B8084E26D /* Pods_flux_prac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2B369F9879E4FAE102461A /* Pods_flux_prac.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		6E61CABC20131FEB00FFE887 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		6E61CAC92013B75000FFE887 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		6E61CACB2013B86100FFE887 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		6E61CAEB2014436400FFE887 /* AllRepositoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRepositoriesRequest.swift; sourceTree = "<group>"; };
+		6E61CAEE201443D400FFE887 /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
 		6E87BC0462AAF7FC045FD422 /* Pods-flux-prac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flux-prac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flux-prac/Pods-flux-prac.debug.xcconfig"; sourceTree = "<group>"; };
 		C76E6123901E1B15A0340E4C /* Pods-flux-prac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flux-prac.release.xcconfig"; path = "Pods/Target Support Files/Pods-flux-prac/Pods-flux-prac.release.xcconfig"; sourceTree = "<group>"; };
 		DD2B369F9879E4FAE102461A /* Pods_flux_prac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flux_prac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,7 @@
 		6E61CAC72013B72800FFE887 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				6E61CAED201443C200FFE887 /* Entity */,
 				6E61CAC82013B72D00FFE887 /* Request */,
 				6E61CAC92013B75000FFE887 /* GithubAPI.swift */,
 			);
@@ -123,8 +128,17 @@
 		6E61CAC82013B72D00FFE887 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				6E61CAEB2014436400FFE887 /* AllRepositoriesRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		6E61CAED201443C200FFE887 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CAEE201443D400FFE887 /* RepositoryEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		B954B882E64590AA8E86F6FF /* Pods */ = {
@@ -288,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E61CAEF201443D400FFE887 /* RepositoryEntity.swift in Sources */,
+				6E61CAEC2014436500FFE887 /* AllRepositoriesRequest.swift in Sources */,
 				6E4CD451201229B40040D125 /* SignInViewController.swift in Sources */,
 				6E61CACC2013B86100FFE887 /* Secret.swift in Sources */,
 				6E61CACA2013B75000FFE887 /* GithubAPI.swift in Sources */,

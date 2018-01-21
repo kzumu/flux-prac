@@ -33,4 +33,5 @@ DerivedData/
 
 Pods/
 R.generated.swift
+Secret.swift
 # End of https://www.gitignore.io/api/xcode
